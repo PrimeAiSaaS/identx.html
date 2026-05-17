@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://identx.co.il/sitemap.xml
