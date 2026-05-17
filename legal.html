@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="robots" content="noindex,follow"/>
+<title>מידע משפטי — i.DENTX מרפאת ד״ר פיראס עזאם</title>
+<meta name="description" content="תנאי שימוש, מדיניות פרטיות והצהרת נגישות של מרפאת ד״ר פיראס עזאם — i.DENTX"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --primary:#1a1a2e;
+    --accent:#2196F3;
+    --accent-light:#E3F2FD;
+    --text:#2c2c3e;
+    --text-muted:#6b7280;
+    --border:#e5e7eb;
+    --bg:#f8f9fb;
+    --white:#ffffff;
+    --radius:12px;
+    --warn-bg:#FFF8E1;
+    --warn-border:#FFD54F;
+  }
+  body{font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);direction:rtl;font-size:16px;line-height:1.7}
+
+  /* ── NAV ── */
+  .topbar{
+    position:sticky;top:0;z-index:100;
+    background:var(--white);border-bottom:1px solid var(--border);
+    padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;
+  }
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .logo-mark{
+    width:36px;height:36px;border-radius:8px;
+    background:var(--primary);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:14px;letter-spacing:-1px;
+  }
+  .logo-text{font-size:15px;font-weight:700;color:var(--primary)}
+  .logo-sub{font-size:12px;color:var(--text-muted);display:block;font-weight:400}
+  .back-btn{
+    display:flex;align-items:center;gap:6px;
+    background:var(--accent-light);color:var(--accent);
+    border:none;border-radius:8px;padding:8px 16px;
+    font-family:'Heebo',sans-serif;font-size:14px;font-weight:500;
+    cursor:pointer;text-decoration:none;transition:background .2s;
+  }
+  .back-btn:hover{background:#BBDEFB}
+  .back-arrow{font-size:16px}
+
+  /* ── HERO ── */
+  .legal-hero{
+    background:var(--primary);color:#fff;
+    padding:48px 24px 40px;text-align:center;
+  }
+  .legal-hero h1{font-size:clamp(24px,4vw,36px);font-weight:900;margin-bottom:8px}
+  .legal-hero p{font-size:15px;opacity:.7;max-width:500px;margin:0 auto}
+  .legal-hero .update{
+    display:inline-block;margin-top:16px;
+    background:rgba(255,255,255,.1);border-radius:20px;
+    padding:4px 14px;font-size:13px;opacity:.8;
+  }
+
+  /* ── TABS ── */
+  .tabs-wrap{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:64px;z-index:90}
+  .tabs{display:flex;max-width:860px;margin:0 auto;padding:0 24px}
+  .tab{
+    padding:16px 24px;font-size:15px;font-weight:500;
+    color:var(--text-muted);cursor:pointer;
+    border-bottom:3px solid transparent;
+    transition:color .2s,border-color .2s;white-space:nowrap;
+    background:none;border-top:none;border-left:none;border-right:none;
+    font-family:'Heebo',sans-serif;
+  }
+  .tab:hover{color:var(--accent)}
+  .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+  /* ── CONTENT ── */
+  .content{max-width:860px;margin:0 auto;padding:40px 24px 80px}
+  .page{display:none}
+  .page.active{display:block}
+
+  /* ── TYPOGRAPHY ── */
+  .page h2{font-size:22px;font-weight:700;color:var(--primary);margin:40px 0 12px;padding-bottom:10px;border-bottom:2px solid var(--accent-light)}
+  .page h2:first-child{margin-top:0}
+  .page h3{font-size:17px;font-weight:700;color:var(--primary);margin:24px 0 8px}
+  .page p{margin-bottom:14px;color:var(--text);line-height:1.8}
+  .page ul{padding-right:20px;margin-bottom:14px}
+  .page ul li{margin-bottom:8px;color:var(--text);line-height:1.7}
+  .page ul li::marker{color:var(--accent)}
+  .page a{color:var(--accent);text-decoration:none}
+  .page a:hover{text-decoration:underline}
+
+  /* ── PLACEHOLDER ── */
+  .ph{
+    background:#FFF176;color:#795548;
+    border:1px dashed #FBC02D;border-radius:4px;
+    padding:1px 8px;font-size:13px;font-weight:700;
+  }
+
+  /* ── INFO BOX ── */
+  .info-box{
+    background:var(--accent-light);border-right:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:16px 20px;margin:20px 0;
+  }
+  .info-box p{margin:0;font-size:14px;color:#1565C0}
+  .warn-box{
+    background:var(--warn-bg);border-right:4px solid var(--warn-border);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:16px 20px;margin:20px 0;
+  }
+  .warn-box p{margin:0;font-size:14px;color:#5D4037}
+
+  /* ── CONTACT CARD ── */
+  .contact-card{
+    background:var(--white);border:1px solid var(--border);
+    border-radius:var(--radius);padding:20px 24px;margin:20px 0;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;
+  }
+  .contact-item label{display:block;font-size:12px;color:var(--text-muted);margin-bottom:4px;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+  .contact-item span{font-size:15px;font-weight:500;color:var(--primary)}
+
+  /* ── TOC ── */
+  .toc{
+    background:var(--white);border:1px solid var(--border);
+    border-radius:var(--radius);padding:20px 24px;margin-bottom:32px;
+  }
+  .toc-title{font-size:14px;font-weight:700;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.06em}
+  .toc ol{padding-right:20px}
+  .toc ol li{margin-bottom:6px;font-size:14px}
+  .toc a{color:var(--accent);font-weight:500}
+
+  /* ── FOOTER ── */
+  .legal-footer{
+    background:var(--white);border-top:1px solid var(--border);
+    text-align:center;padding:24px;font-size:13px;color:var(--text-muted);
+  }
+  .legal-footer a{color:var(--accent)}
+
+  /* ── BADGE ── */
+  .badge{
+    display:inline-block;font-size:12px;font-weight:700;
+    padding:2px 10px;border-radius:20px;margin-right:8px;
+  }
+  .badge-blue{background:var(--accent-light);color:var(--accent)}
+  .badge-green{background:#E8F5E9;color:#2E7D32}
+
+  @media(max-width:640px){
+    .tabs{overflow-x:auto;scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tab{padding:14px 16px;font-size:14px}
+    .content{padding:24px 16px 60px}
+    .contact-card{grid-template-columns:1fr}
+    .topbar{padding:0 16px}
+    .back-btn span:not(.back-arrow){display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <a href="index.html" class="logo">
+    <div class="logo-mark">i<span style="color:#2196F3">.</span></div>
+    <div>
+      <span class="logo-text">i.DENTX</span>
+      <span class="logo-sub">מרפאת ד״ר פיראס עזאם</span>
+    </div>
+  </a>
+  <a href="index.html" class="back-btn">
+    <span class="back-arrow">←</span>
+    <span>חזרה לאתר</span>
+  </a>
+</header>
+
+<!-- HERO -->
+<div class="legal-hero">
+  <h1>מידע משפטי</h1>
+  <p>שקיפות מלאה — תנאי השימוש, מדיניות הפרטיות והנגישות של המרפאה</p>
+  <span class="update">עדכון אחרון: ינואר 2026</span>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('terms')">תנאי שימוש</button>
+    <button class="tab" onclick="switchTab('privacy')">מדיניות פרטיות</button>
+    <button class="tab" onclick="switchTab('access')">הצהרת נגישות</button>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- ══════════════ תנאי שימוש ══════════════ -->
+  <div class="page active" id="page-terms">
+
+    <div class="toc">
+      <div class="toc-title">תוכן עניינים</div>
+      <ol>
+        <li><a href="#terms-general">כללי</a></li>
+        <li><a href="#terms-services">שירותי המרפאה והאתר</a></li>
+        <li><a href="#terms-booking">מערכת קביעת התורים</a></li>
+        <li><a href="#terms-medical">הגבלות רפואיות</a></li>
+        <li><a href="#terms-ip">קניין רוחני</a></li>
+        <li><a href="#terms-liability">הגבלת אחריות</a></li>
+        <li><a href="#terms-changes">שינויים בתנאים</a></li>
+        <li><a href="#terms-law">דין ושיפוט</a></li>
+      </ol>
+    </div>
+
+    <h2 id="terms-general">1. כללי</h2>
+    <p>ברוכים הבאים לאתר האינטרנט של <strong>מרפאת ד״ר פיראס עזאם — i.DENTX</strong> (להלן: "המרפאה" או "האתר"). השימוש באתר כפוף לתנאים המפורטים במסמך זה. בכניסה לאתר ובשימוש בשירותיו, הנך מאשר שקראת, הבנת ומסכים לכל התנאים המפורטים כאן.</p>
+    <p>האתר מופעל על ידי: <strong>ד״ר פיראס עזאם</strong>, דרך החטיבות 1, נוף הגליל.</p>
+    <p>לשאלות בנוגע לתנאים אלו, ניתן לפנות אל: <span class="ph">[info@identx.co.il]</span></p>
+
+    <h2 id="terms-services">2. שירותי המרפאה והאתר</h2>
+    <p>האתר מספק מידע כללי על שירותי רפואת השיניים הניתנים במרפאה, לרבות:</p>
+    <ul>
+      <li>מידע על טיפולים רפואיים (השתלות, ציפויים, יישור, הלבנה ועוד)</li>
+      <li>תיאום תורים אונליין דרך מערכת קביעת התורים</li>
+      <li>פרטי יצירת קשר ומיקום המרפאה</li>
+      <li>תצלומי לפני ואחרי (בהסכמת מטופלים)</li>
+    </ul>
+    <div class="warn-box">
+      <p>⚠️ <strong>חשוב:</strong> המידע באתר הוא לצורכי מידע כללי בלבד ואינו מהווה ייעוץ רפואי. אל תסתמך על מידע מהאתר כתחליף לייעוץ רופא מקצועי.</p>
+    </div>
+
+    <h2 id="terms-booking">3. מערכת קביעת התורים</h2>
+    <h3>3.1 תהליך הקביעה</h3>
+    <p>מערכת קביעת התורים מאפשרת לך לבחור שירות, תאריך ושעה לפגישה במרפאה. קביעת תור מחייבת הזנת פרטים אישיים אמיתיים ומדויקים.</p>
+
+    <h3>3.2 אישור התור</h3>
+    <p>לאחר קביעת התור תקבל אישור בהודעת WhatsApp ו/או בדואר אלקטרוני. התור אינו מאושר סופית עד לקבלת אישור מפורש מהמרפאה.</p>
+
+    <h3>3.3 ביטול ושינוי תורים</h3>
+    <p>ביטול או שינוי תור יש לבצע לפחות <strong>24 שעות מראש</strong> בטלפון <a href="tel:+972584104155">058-410-4155</a> או בהודעת WhatsApp. ביטול תוך פחות מ-24 שעות עלול לגרור חיוב בגין ביטול מאוחר, בהתאם למדיניות המרפאה.</p>
+
+    <h3>3.4 תזכורות אוטומטיות</h3>
+    <p>המרפאה שולחת תזכורות אוטומטיות בוואטסאפ לפני מועד התור. בקביעת התור הנך מאשר קבלת הודעות אלו. ניתן לבטל הסכמה זו בפנייה למרפאה.</p>
+
+    <h2 id="terms-medical">4. הגבלות רפואיות</h2>
+    <p>האתר אינו כלי לאבחון רפואי. כל מידע המופיע באתר בנוגע לטיפולים הוא כללי ואינו מותאם לסיטואציה הרפואית האישית שלך. <strong>לפני כל טיפול</strong> יבוצע בדיקת מטופל מקצועית על ידי הצוות הרפואי.</p>
+
+    <h2 id="terms-ip">5. קניין רוחני</h2>
+    <p>כל התכנים באתר — לרבות טקסטים, תמונות, לוגו, עיצוב, ותצלומי לפני/אחרי — מוגנים בזכויות יוצרים ושייכים למרפאה. אין להעתיק, לשכפל, להפיץ, לשדר, לפרסם או להשתמש בתכנים אלו ללא אישור בכתב מראש.</p>
+
+    <h2 id="terms-liability">6. הגבלת אחריות</h2>
+    <p>המרפאה אינה אחראית לנזקים ישירים, עקיפים, מקריים או תוצאתיים שנגרמו עקב:</p>
+    <ul>
+      <li>שימוש או אי-יכולת להשתמש באתר</li>
+      <li>טעויות, השמטות, הפסקות או מידע שגוי באתר</li>
+      <li>תקלות טכניות שגרמו לאובדן מידע על תורים</li>
+      <li>סתירה בין מידע באתר לבין מדיניות המרפאה בפועל</li>
+    </ul>
+
+    <h2 id="terms-changes">7. שינויים בתנאים</h2>
+    <p>המרפאה שומרת לעצמה את הזכות לשנות תנאים אלו בכל עת. שינויים מהותיים יפורסמו באתר. המשך שימוש באתר לאחר פרסום שינויים מהווה הסכמה לתנאים המעודכנים.</p>
+
+    <h2 id="terms-law">8. דין ושיפוט</h2>
+    <p>תנאים אלו כפופים לדיני מדינת ישראל. סמכות השיפוט הבלעדית לכל סכסוך הנובע מתנאים אלו או מהשימוש באתר תהא לבתי המשפט המוסמכים במחוז צפון, ישראל.</p>
+
+    <div class="info-box">
+      <p>📋 <strong>תאריך כניסה לתוקף:</strong> ינואר 2026 | <strong>גרסה:</strong> 1.0</p>
+    </div>
+
+  </div>
+
+  <!-- ══════════════ מדיניות פרטיות ══════════════ -->
+  <div class="page" id="page-privacy">
+
+    <div class="info-box">
+      <p>📋 מדיניות זו עומדת בדרישות <strong>חוק הגנת הפרטיות התשמ"א-1981</strong>, <strong>תקנות אבטחת מידע התשע"ז-2017</strong>, ומחזיקה את מידע הבריאות שלך ברמת אבטחה מירבית.</p>
+    </div>
+
+    <div class="toc">
+      <div class="toc-title">תוכן עניינים</div>
+      <ol>
+        <li><a href="#priv-who">מי אחראי על המידע שלך</a></li>
+        <li><a href="#priv-collect">איזה מידע אנחנו אוספים</a></li>
+        <li><a href="#priv-medical">מידע רפואי — הגנה מיוחדת</a></li>
+        <li><a href="#priv-why">למה אנחנו משתמשים במידע</a></li>
+        <li><a href="#priv-share">עם מי משתף המידע</a></li>
+        <li><a href="#priv-whatsapp">שירות WhatsApp</a></li>
+        <li><a href="#priv-retention">כמה זמן שומרים מידע</a></li>
+        <li><a href="#priv-security">אבטחת המידע</a></li>
+        <li><a href="#priv-rights">הזכויות שלך</a></li>
+        <li><a href="#priv-contact">פנייה בנושא פרטיות</a></li>
+      </ol>
+    </div>
+
+    <h2 id="priv-who">1. מי אחראי על המידע שלך</h2>
+    <p>הגורם האחראי (Responsible Party) לעיבוד הנתונים האישיים שלך הוא:</p>
+    <div class="contact-card">
+      <div class="contact-item">
+        <label>שם</label>
+        <span>ד״ר פיראס עזאם</span>
+      </div>
+      <div class="contact-item">
+        <label>כתובת</label>
+        <span>דרך החטיבות 1, נוף הגליל</span>
+      </div>
+      <div class="contact-item">
+        <label>טלפון</label>
+        <span><a href="tel:+972584104155">058-410-4155</a></span>
+      </div>
+      <div class="contact-item">
+        <label>דוא"ל</label>
+        <span><a href="mailto:info@identx.co.il">info@identx.co.il</a></span>
+      </div>
+    </div>
+
+    <h2 id="priv-collect">2. איזה מידע אנחנו אוספים</h2>
+
+    <h3>2.1 מידע שאתה מספק ישירות</h3>
+    <ul>
+      <li><span class="badge badge-blue">שם מלא</span> לצורך זיהוי ותיאום</li>
+      <li><span class="badge badge-blue">מספר טלפון</span> לאישורים ותזכורות</li>
+      <li><span class="badge badge-blue">כתובת דוא"ל</span> (אופציונלי) לאישורים בכתב</li>
+      <li><span class="badge badge-blue">סוג הטיפול המבוקש</span> לתיאום עם הצוות</li>
+      <li><span class="badge badge-blue">תאריך ושעה מועדפים</span> לקביעת התור</li>
+      <li><span class="badge badge-blue">הערות</span> מידע שבחרת לשתף בקביעת התור</li>
+    </ul>
+
+    <h3>2.2 מידע טכני (אוטומטי)</h3>
+    <ul>
+      <li>כתובת IP, סוג דפדפן, מערכת הפעלה</li>
+      <li>עמודים שנצפו ומשך שהייה באתר</li>
+      <li>מקור ההגעה לאתר (גוגל, ישיר, הפניה)</li>
+    </ul>
+
+    <div class="warn-box">
+      <p>🚫 <strong>לא נאספים</strong> בשום שלב: מספרי כרטיסי אשראי, מספרי תעודת זהות, סיסמאות, או נתונים בנקאיים.</p>
+    </div>
+
+    <h2 id="priv-medical">3. מידע רפואי — הגנה מיוחדת</h2>
+    <p>מידע רפואי מוגן ברמה גבוהה יותר. מידע רפואי מפורט (היסטוריה רפואית, אבחנות, תוצאות בדיקות) <strong>אינו נאסף דרך האתר</strong> — הוא נאסף ומנוהל אך ורק ישירות במרפאה על ידי הצוות הרפואי, בהתאם לחוק זכויות החולה התשנ"ו-1996.</p>
+    <p>הערות שתכתוב בטופס קביעת התור נחשבות רגישות וטופלות בהתאם.</p>
+
+    <h2 id="priv-why">4. למה אנחנו משתמשים במידע</h2>
+    <ul>
+      <li><strong>ניהול תורים:</strong> אישור, תזכורת, ביטול ושינוי מועדים</li>
+      <li><strong>שליחת תזכורות:</strong> הודעות WhatsApp ו/או SMS לפני מועד הטיפול</li>
+      <li><strong>שיפור שירות:</strong> ניתוח אנונימי של ביקורים באתר לשיפור חוויית המשתמש</li>
+      <li><strong>ציות לחוק:</strong> שמירת רשומות בהתאם לדרישות חוקיות</li>
+    </ul>
+    <p><strong>לא נשתמש</strong> במידע שלך לצרכי שיווק ללא הסכמתך המפורשת.</p>
+
+    <h2 id="priv-share">5. עם מי משתף המידע</h2>
+    <p>המידע שלך <strong>לא נמכר</strong> לצדדים שלישיים. המידע יכול להיות משותף במצבים אלו בלבד:</p>
+    <ul>
+      <li><strong>ספקי שירות טכנולוגיים</strong> המסייעים בהפעלת האתר ומערכת התורים (ראה סעיף WhatsApp)</li>
+      <li><strong>רשויות חוק</strong> — רק אם מחויב לפי צו שיפוטי או דין</li>
+      <li><strong>צוות המרפאה</strong> — הגורמים הרפואיים הנדרשים לטיפולך</li>
+    </ul>
+
+    <h2 id="priv-whatsapp">6. שירות WhatsApp</h2>
+    <p>המרפאה משתמשת ב-WhatsApp לשליחת אישורים ותזכורות. WhatsApp מופעל על ידי <strong>Meta Platforms, Inc.</strong> שמדיניות הפרטיות שלה זמינה בכתובת <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener">whatsapp.com/legal/privacy-policy</a>.</p>
+    <p>על ידי מסירת מספר הטלפון שלך ואישור קבלת הודעות, הנך מסכים לקבל הודעות WhatsApp מהמרפאה.</p>
+
+    <h2 id="priv-retention">7. כמה זמן שומרים מידע</h2>
+    <ul>
+      <li><strong>נתוני קביעת תורים:</strong> 24 חודשים מיום הטיפול</li>
+      <li><strong>רשומות רפואיות:</strong> בהתאם לחוק — לפחות 7 שנים (מבוגרים) / עד גיל 25 (קטינים)</li>
+      <li><strong>נתוני גלישה אנונימיים:</strong> 26 חודשים</li>
+    </ul>
+    <p>בתום תקופת השמירה, המידע נמחק באופן מאובטח.</p>
+
+    <h2 id="priv-security">8. אבטחת המידע</h2>
+    <p>אנחנו מיישמים אמצעי אבטחה טכניים וארגוניים הכוללים:</p>
+    <ul>
+      <li>הצפנת SSL/TLS לכל תעבורת הנתונים באתר</li>
+      <li>גישה למידע מוגבלת לצוות מורשה בלבד</li>
+      <li>שרתי מידע מאובטחים עם גיבויים סדירים</li>
+      <li>מדיניות סיסמאות חזקה וגישה מאומתת</li>
+    </ul>
+
+    <h2 id="priv-rights">9. הזכויות שלך</h2>
+    <p>בהתאם לחוק הגנת הפרטיות הישראלי, יש לך הזכות:</p>
+    <ul>
+      <li><strong>עיון:</strong> לדעת אילו נתונים שמורים אצלנו לגביך</li>
+      <li><strong>תיקון:</strong> לדרוש תיקון נתונים שגויים</li>
+      <li><strong>מחיקה:</strong> לדרוש מחיקת נתוניך (בכפוף לחובות חוקיות)</li>
+      <li><strong>ביטול הסכמה:</strong> לבטל הסכמה לקבלת הודעות שיווקיות</li>
+    </ul>
+    <p>לממש את זכויותיך — פנה אל <a href="mailto:info@identx.co.il">info@identx.co.il</a> ונשיב תוך <strong>14 ימי עסקים</strong>.</p>
+
+    <h2 id="priv-contact">10. פנייה בנושא פרטיות</h2>
+    <div class="contact-card">
+      <div class="contact-item">
+        <label>ממונה על הפרטיות</label>
+        <span><span class="ph">[שם הממונה]</span></span>
+      </div>
+      <div class="contact-item">
+        <label>דוא"ל</label>
+        <span><a href="mailto:info@identx.co.il">info@identx.co.il</a></span>
+      </div>
+      <div class="contact-item">
+        <label>טלפון</label>
+        <span><a href="tel:+972584104155">058-410-4155</a></span>
+      </div>
+      <div class="contact-item">
+        <label>זמן תגובה</label>
+        <span>עד 14 ימי עסקים</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <p>📋 <strong>תאריך כניסה לתוקף:</strong> ינואר 2026 | <strong>גרסה:</strong> 1.0</p>
+    </div>
+
+  </div>
+
+  <!-- ══════════════ הצהרת נגישות ══════════════ -->
+  <div class="page" id="page-access">
+
+    <div class="info-box">
+      <p>⚖️ הצהרה זו ניתנת בהתאם ל<strong>חוק שוויון זכויות לאנשים עם מוגבלות התשנ"ח-1998</strong>, תקנות הנגישות לשירות (התאמות נגישות לאתר אינטרנט) התשע"ג, ותקן <strong>WCAG 2.1 רמה AA</strong>.</p>
+    </div>
+
+    <h2>1. מחויבות המרפאה לנגישות</h2>
+    <p>מרפאת i.DENTX — ד״ר פיראס עזאם מאמינה שכל אדם, ללא קשר ליכולותיו, זכאי לגשת למידע רפואי ולשירותי המרפאה. אנחנו פועלים באופן מתמיד לשיפור נגישות האתר ושירותינו.</p>
+
+    <h2>2. סטטוס הנגישות הנוכחי</h2>
+    <p><span class="badge badge-green">✓ תואם חלקית</span> האתר תואם חלקית לתקן WCAG 2.1 ברמה AA. אנחנו ממשיכים לשפר את הנגישות.</p>
+
+    <h3>2.1 מה מיושם באתר</h3>
+    <ul>
+      <li>תמיכה בניווט מקלדת מלא</li>
+      <li>תגיות alt לתמונות</li>
+      <li>ניגודיות צבעים תקנית (WCAG AA)</li>
+      <li>תמיכה בקוראי מסך (ARIA labels)</li>
+      <li>פאנל נגישות עם אפשרויות: הגדלת טקסט, ניגודיות גבוהה, פונט לדיסלקסיה, הפחתת אנימציות</li>
+      <li>מבנה כותרות סמנטי (H1→H2→H3)</li>
+      <li>שפה מוגדרת (lang="he", dir="rtl")</li>
+      <li>קישורי דילוג לתוכן ראשי</li>
+    </ul>
+
+    <h3>2.2 מגבלות ידועות</h3>
+    <ul>
+      <li>חלק מתמונות לפני/אחרי ייתכן שיסרו תיאור מפורט</li>
+      <li>תוכן מוטמע מצד שלישי (מפות, וידאו) עשוי להיות בעל נגישות מוגבלת</li>
+    </ul>
+
+    <h2>3. נגישות המרפאה הפיזית</h2>
+    <ul>
+      <li>כניסה נגישה לכיסאות גלגלים</li>
+      <li>חניה נגישה בסמוך למרפאה</li>
+      <li>שירותים נגישים בבניין</li>
+      <li>כסאות הטיפול ניתנים להתאמה</li>
+    </ul>
+    <p>לפרטים נוספים על נגישות פיזית — <a href="tel:+972584104155">צור קשר מראש</a> ונסייע בהכנת ביקורך.</p>
+
+    <h2>4. טכנולוגיות נגישות נתמכות</h2>
+    <p>האתר נבדק עם כלי הנגישות הבאים:</p>
+    <ul>
+      <li>NVDA (Windows) + Chrome</li>
+      <li>VoiceOver (macOS/iOS) + Safari</li>
+      <li>TalkBack (Android) + Chrome</li>
+      <li>כלי Axe DevTools ו-Lighthouse</li>
+    </ul>
+
+    <h2>5. רכז הנגישות</h2>
+    <p>נתקלת בבעיית נגישות? רכז הנגישות שלנו ישמח לסייע:</p>
+    <div class="contact-card">
+      <div class="contact-item">
+        <label>שם רכז הנגישות</label>
+        <span><span class="ph">[שם הרכז]</span></span>
+      </div>
+      <div class="contact-item">
+        <label>דוא"ל</label>
+        <span><span class="ph">[accessibility@identx.co.il]</span></span>
+      </div>
+      <div class="contact-item">
+        <label>טלפון</label>
+        <span><a href="tel:+972584104155">058-410-4155</a></span>
+      </div>
+      <div class="contact-item">
+        <label>זמן תגובה</label>
+        <span>עד 5 ימי עסקים</span>
+      </div>
+    </div>
+
+    <h2>6. הגשת פנייה</h2>
+    <p>אם נתקלת בחסם נגישות באתר או במרפאה, אנא פנה אלינו ותאר:</p>
+    <ul>
+      <li>את הבעיה שנתקלת בה</li>
+      <li>הדף או הפעולה הספציפית</li>
+      <li>סוג המכשיר ודפדפן בו השתמשת</li>
+    </ul>
+    <p>נשאף לטפל בפנייה תוך <strong>5 ימי עסקים</strong> ולספק מענה חלופי לשירות הנדרש במידת הצורך.</p>
+
+    <h2>7. ערוץ ערעור</h2>
+    <p>אם לא קיבלת מענה מספק, ניתן לפנות גם אל <strong>הנציבות לשוויון זכויות לאנשים עם מוגבלות</strong> במשרד המשפטים: <a href="https://www.gov.il/he/departments/units/nizvut" target="_blank" rel="noopener">gov.il/nizvut</a></p>
+
+    <div class="info-box">
+      <p>📋 <strong>תאריך עדכון ההצהרה:</strong> ינואר 2026 | <strong>בדיקה הבאה מתוכננת:</strong> ינואר 2027</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="legal-footer">
+  <p>© 2026 i.DENTX — מרפאת ד״ר פיראס עזאם | דרך החטיבות 1, נוף הגליל</p>
+  <p style="margin-top:8px">
+    <a href="javascript:void(0)" onclick="switchTab('terms')">תנאי שימוש</a> &nbsp;|&nbsp;
+    <a href="javascript:void(0)" onclick="switchTab('privacy')">מדיניות פרטיות</a> &nbsp;|&nbsp;
+    <a href="javascript:void(0)" onclick="switchTab('access')">הצהרת נגישות</a>
+  </p>
+</footer>
+
+<script>
+  function switchTab(name) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const tabs = ['terms','privacy','access'];
+    const idx = tabs.indexOf(name);
+    if(idx > -1) {
+      document.querySelectorAll('.tab')[idx].classList.add('active');
+      document.getElementById('page-'+name).classList.add('active');
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  }
+
+  /* Smooth anchor scrolling inside pages */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      const el = document.querySelector(this.getAttribute('href'));
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+</script>
+
+</body>
+</html>

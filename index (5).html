@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="author" content="ד״ר פיראס עזאם"/>
+<meta name="description" content="מרפאת שיניים מתקדמת בנוף הגליל. ד״ר פיראס עזאם — השתלות, ציפויים, יישור שיניים. קביעת תור אונליין. 058-410-4155"/>
+<meta name="keywords" content="רופא שיניים נוף הגליל, מרפאת שיניים, ד״ר פיראס עזאם, השתלות שיניים, ציפויי E-MAX, יישור שיניים"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="i.DENTX — מרפאת ד״ר פיראס עזאם"/>
+<meta property="og:description" content="טיפולי שיניים מתקדמים בנוף הגליל. קביעת תור אונליין 24/7. 058-410-4155"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://identx.co.il/"/>
+<meta property="og:locale" content="he_IL"/>
+<meta property="og:site_name" content="i.DENTX"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="i.DENTX — מרפאת ד״ר פיראס עזאם"/>
+<meta name="twitter:description" content="טיפולי שיניים מתקדמים בנוף הגליל"/>
+<title>i.DENTX — מרפאת ד״ר פיראס עזאם | נוף הגליל</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Noto+Serif+Hebrew:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --navy:#0a0f1e;
+  --navy2:#0f1629;
+  --blue:#1a4fa8;
+  --blue-bright:#2563eb;
+  --cyan:#06b6d4;
+  --cyan-light:#e0f7fa;
+  --gold:#c9a84c;
+  --gold-light:#fdf6e3;
+  --white:#ffffff;
+  --off-white:#f8f9fc;
+  --text:#1e293b;
+  --text-muted:#64748b;
+  --border:#e2e8f0;
+  --r:14px;
+  --r-lg:22px;
+  --shadow:0 4px 24px rgba(10,15,30,.08);
+  --shadow-lg:0 12px 48px rgba(10,15,30,.14);
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;direction:rtl}
+
+/* ── SKIP ── */
+.skip-link{position:absolute;top:-999px;right:0;background:var(--blue-bright);color:#fff;padding:8px 16px;border-radius:0 0 8px 0;font-size:14px;font-weight:600;z-index:9999}
+.skip-link:focus{top:0}
+
+/* ══════════════ NAV ══════════════ */
+nav{
+  position:fixed;top:0;right:0;left:0;z-index:500;
+  padding:0 40px;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .3s,box-shadow .3s;
+}
+nav.scrolled{background:rgba(10,15,30,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{
+  width:38px;height:38px;border-radius:9px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:13px;letter-spacing:-1px;flex-shrink:0;
+}
+.nav-logo-text{font-size:17px;font-weight:900;color:var(--white);letter-spacing:-.5px}
+.nav-logo-sub{font-size:11px;color:rgba(255,255,255,.55);display:block;font-weight:400}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{
+  color:rgba(255,255,255,.75);text-decoration:none;
+  font-size:14px;font-weight:500;padding:8px 14px;border-radius:8px;
+  transition:color .2s,background .2s;
+}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-cta{
+  background:var(--cyan)!important;color:var(--navy)!important;
+  font-weight:700!important;padding:8px 18px!important;
+  border-radius:8px!important;display:flex;align-items:center;gap:6px;
+  transition:opacity .2s!important;
+}
+.nav-cta:hover{opacity:.9!important;background:var(--cyan)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;transition:.3s}
+
+/* ══════════════ HERO ══════════════ */
+#hero{
+  min-height:100vh;
+  background:var(--navy);
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;padding:120px 40px 80px;
+}
+.hero-bg{
+  position:absolute;inset:0;pointer-events:none;
+}
+.hero-orb{
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;
+}
+.hero-orb-1{width:600px;height:600px;background:var(--blue);top:-100px;right:-100px}
+.hero-orb-2{width:400px;height:400px;background:var(--cyan);bottom:-50px;left:10%}
+.hero-orb-3{width:300px;height:300px;background:var(--gold);top:40%;left:-50px;opacity:.15}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+
+.hero-inner{
+  max-width:1100px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center;
+  position:relative;z-index:2;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.25);
+  color:var(--cyan);border-radius:20px;padding:6px 16px;
+  font-size:13px;font-weight:500;margin-bottom:24px;
+}
+.hero-badge-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+
+.hero-title{
+  font-family:'Noto Serif Hebrew',serif;
+  font-size:clamp(38px,5.5vw,68px);
+  font-weight:900;line-height:1.1;
+  color:var(--white);margin-bottom:20px;
+}
+.hero-title span{
+  background:linear-gradient(135deg,var(--cyan),var(--blue-bright));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-desc{
+  font-size:18px;color:rgba(255,255,255,.65);line-height:1.8;
+  margin-bottom:36px;max-width:520px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--cyan);color:var(--navy);
+  font-family:'Heebo',sans-serif;font-size:16px;font-weight:700;
+  padding:14px 28px;border-radius:10px;text-decoration:none;
+  border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;
+  box-shadow:0 4px 20px rgba(6,182,212,.35);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(6,182,212,.45)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:var(--white);
+  font-family:'Heebo',sans-serif;font-size:16px;font-weight:500;
+  padding:14px 28px;border-radius:10px;text-decoration:none;
+  border:1px solid rgba(255,255,255,.25);cursor:pointer;
+  transition:background .2s,border-color .2s;
+}
+.btn-outline:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.45)}
+.btn-wa{background:#25D366;color:#fff;box-shadow:0 4px 20px rgba(37,211,102,.3)}
+.btn-wa:hover{box-shadow:0 8px 32px rgba(37,211,102,.45)!important}
+
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
+.hero-stat{}
+.hero-stat-num{font-size:28px;font-weight:900;color:var(--white);line-height:1}
+.hero-stat-label{font-size:13px;color:rgba(255,255,255,.5);margin-top:3px}
+
+/* Hero Card */
+.hero-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r-lg);
+  padding:32px;backdrop-filter:blur(10px);
+}
+.hero-card-header{
+  display:flex;align-items:center;gap:12px;
+  padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.07);
+  margin-bottom:20px;
+}
+.hero-card-avatar{
+  width:52px;height:52px;border-radius:12px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;flex-shrink:0;
+}
+.hero-card-name{font-size:16px;font-weight:700;color:#fff}
+.hero-card-title{font-size:13px;color:rgba(255,255,255,.5);margin-top:2px}
+.hero-card-badge{
+  margin-right:auto;background:rgba(37,211,102,.15);
+  color:#25D366;font-size:11px;font-weight:600;
+  padding:3px 10px;border-radius:10px;border:1px solid rgba(37,211,102,.25);
+  display:flex;align-items:center;gap:5px;
+}
+.hero-card-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#25D366;display:block}
+.hero-treatments{display:flex;flex-direction:column;gap:12px}
+.hero-treatment{
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.04);border-radius:10px;padding:12px 14px;
+}
+.hero-treatment-icon{
+  width:36px;height:36px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+  flex-shrink:0;
+}
+.hero-treatment-name{font-size:14px;font-weight:500;color:rgba(255,255,255,.85)}
+.hero-treatment-meta{font-size:12px;color:rgba(255,255,255,.4);margin-top:1px}
+.hero-card-cta{
+  margin-top:20px;padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.hero-card-cta a{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:linear-gradient(135deg,var(--blue),var(--blue-bright));
+  color:#fff;text-decoration:none;font-size:15px;font-weight:700;
+  padding:13px;border-radius:10px;transition:opacity .2s;
+}
+.hero-card-cta a:hover{opacity:.9}
+
+/* ══════════════ SECTIONS COMMON ══════════════ */
+section{padding:100px 40px}
+.section-label{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue-bright);margin-bottom:16px;
+}
+.section-label::before{content:'';width:24px;height:2px;background:var(--blue-bright);display:block;margin-left:2px}
+h2.section-title{
+  font-family:'Noto Serif Hebrew',serif;
+  font-size:clamp(28px,3.5vw,44px);font-weight:900;
+  color:var(--navy);line-height:1.15;margin-bottom:16px;
+}
+.section-desc{font-size:17px;color:var(--text-muted);line-height:1.8;max-width:560px}
+.section-head{margin-bottom:56px}
+.container{max-width:1100px;margin:0 auto}
+
+/* ══════════════ SERVICES ══════════════ */
+#services{background:var(--off-white)}
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.service-card{
+  background:var(--white);border-radius:var(--r-lg);
+  padding:32px 28px;border:1px solid var(--border);
+  transition:transform .3s,box-shadow .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.service-card::before{
+  content:'';position:absolute;top:0;right:0;left:0;
+  height:3px;border-radius:var(--r-lg) var(--r-lg) 0 0;
+  transition:height .3s;
+}
+.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.service-card:hover::before{height:4px}
+.sc-blue::before{background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.sc-cyan::before{background:linear-gradient(90deg,var(--cyan),#0284c7)}
+.sc-gold::before{background:linear-gradient(90deg,var(--gold),#e8c47a)}
+
+.service-icon{
+  width:52px;height:52px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;margin-bottom:20px;
+}
+.si-blue{background:rgba(37,99,235,.1);color:var(--blue-bright)}
+.si-cyan{background:rgba(6,182,212,.1);color:#0891b2}
+.si-gold{background:rgba(201,168,76,.12);color:#a07820}
+
+.service-card h3{font-size:19px;font-weight:700;margin-bottom:10px;color:var(--navy)}
+.service-card p{font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:20px}
+.service-features{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.service-features li{
+  display:flex;align-items:center;gap:8px;
+  font-size:14px;color:var(--text-muted);
+}
+.service-features li::before{
+  content:'\e92c';font-family:'tabler-icons';
+  font-size:16px;color:var(--blue-bright);flex-shrink:0;
+}
+.service-link{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:14px;font-weight:600;color:var(--blue-bright);
+  text-decoration:none;
+  transition:gap .2s;
+}
+.service-link:hover{gap:10px}
+
+/* ══════════════ BEFORE/AFTER ══════════════ */
+#results{background:var(--white)}
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ba-card{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:transform .3s,box-shadow .3s}
+.ba-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.ba-img-wrap{position:relative;overflow:hidden;aspect-ratio:4/3}
+.ba-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.ba-card:hover .ba-img-wrap img{transform:scale(1.04)}
+.ba-tag{
+  position:absolute;top:12px;right:12px;
+  background:rgba(10,15,30,.75);backdrop-filter:blur(8px);
+  color:#fff;font-size:12px;font-weight:600;
+  padding:4px 12px;border-radius:20px;
+}
+.ba-info{padding:20px 22px}
+.ba-stars{color:var(--gold);font-size:14px;letter-spacing:1px;margin-bottom:8px}
+.ba-info h3{font-size:17px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.ba-info p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+/* ══════════════ REVIEWS ══════════════ */
+#reviews{background:var(--navy);padding:100px 40px}
+#reviews .section-label{color:var(--cyan)}
+#reviews .section-label::before{background:var(--cyan)}
+#reviews h2.section-title{color:var(--white)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r-lg);padding:28px;
+  transition:background .3s,border-color .3s;
+}
+.review-card:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15)}
+.review-stars{color:var(--gold);font-size:15px;letter-spacing:2px;margin-bottom:16px}
+.review-text{font-size:15px;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:20px;font-style:italic}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:15px;font-weight:700;flex-shrink:0;
+}
+.review-name{font-size:15px;font-weight:600;color:#fff}
+.review-treatment{font-size:12px;color:rgba(255,255,255,.4);margin-top:2px}
+
+/* ══════════════ BOOKING ══════════════ */
+#booking{background:var(--off-white)}
+.booking-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
+}
+.booking-info{}
+.booking-info h2{margin-bottom:16px}
+.booking-info .section-desc{margin-bottom:36px}
+
+.booking-feature{
+  display:flex;align-items:flex-start;gap:16px;margin-bottom:24px;
+}
+.booking-feature-icon{
+  width:44px;height:44px;border-radius:10px;
+  background:rgba(37,99,235,.1);color:var(--blue-bright);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.booking-feature h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.booking-feature p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+.booking-widget{
+  background:var(--white);border-radius:var(--r-lg);
+  border:1px solid var(--border);overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+.booking-widget-head{
+  background:var(--navy);padding:24px 28px;
+  display:flex;align-items:center;gap:14px;
+}
+.booking-widget-head-icon{font-size:24px}
+.booking-widget-head h3{font-size:17px;font-weight:700;color:#fff}
+.booking-widget-head p{font-size:13px;color:rgba(255,255,255,.5);margin-top:2px}
+
+/* Cal.com Embed Area */
+.calcom-embed{
+  padding:0;
+  min-height:500px;
+  display:flex;flex-direction:column;
+}
+.calcom-embed iframe{
+  width:100%;flex:1;border:none;min-height:500px;
+}
+/* Fallback when no Cal.com connected */
+.calcom-fallback{
+  padding:32px 28px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.booking-steps{
+  display:flex;flex-direction:column;gap:0;
+  margin-bottom:24px;
+}
+.booking-step{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:16px 0;position:relative;
+}
+.booking-step:not(:last-child)::after{
+  content:'';position:absolute;
+  top:44px;right:21px;
+  width:2px;height:calc(100% - 28px);
+  background:var(--border);
+}
+.step-num{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--blue-bright);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;flex-shrink:0;
+  position:relative;z-index:1;
+}
+.step-body h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.step-body p{font-size:13px;color:var(--text-muted)}
+
+.booking-cta-wa{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:#25D366;color:#fff;text-decoration:none;
+  font-size:16px;font-weight:700;padding:16px;border-radius:10px;
+  transition:opacity .2s,transform .2s;
+  box-shadow:0 4px 20px rgba(37,211,102,.3);
+}
+.booking-cta-wa:hover{opacity:.92;transform:translateY(-1px)}
+.booking-cta-tel{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:transparent;color:var(--text-muted);text-decoration:none;
+  font-size:14px;font-weight:500;padding:12px;border-radius:10px;
+  border:1px solid var(--border);margin-top:10px;transition:background .2s;
+}
+.booking-cta-tel:hover{background:var(--off-white)}
+
+/* ══════════════ CONTACT ══════════════ */
+#contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact-info-item{
+  display:flex;align-items:flex-start;gap:16px;
+  margin-bottom:28px;
+}
+.contact-info-icon{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--off-white);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;color:var(--blue-bright);flex-shrink:0;
+}
+.contact-info-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:4px}
+.contact-info-val{font-size:15px;font-weight:600;color:var(--navy)}
+.contact-info-sub{font-size:13px;color:var(--text-muted);margin-top:2px}
+.contact-info-val a{color:inherit;text-decoration:none;transition:color .2s}
+.contact-info-val a:hover{color:var(--blue-bright)}
+.map-placeholder{
+  border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--border);background:var(--off-white);
+  height:300px;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;margin-top:8px;
+}
+.map-placeholder iframe{width:100%;height:100%;border:none}
+
+/* ══════════════ FOOTER ══════════════ */
+footer{
+  background:var(--navy2);
+  padding:60px 40px 30px;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.footer-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;
+  padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06);
+  margin-bottom:30px;
+}
+.footer-brand .nav-logo{margin-bottom:16px}
+.footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.8;margin-bottom:20px}
+.footer-socials{display:flex;gap:10px}
+.footer-social{
+  width:36px;height:36px;border-radius:8px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.5);text-decoration:none;font-size:16px;
+  transition:background .2s,color .2s;
+}
+.footer-social:hover{background:rgba(255,255,255,.12);color:#fff}
+.footer-col h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.4);margin-bottom:16px}
+.footer-col a,.footer-col span{
+  display:block;font-size:14px;color:rgba(255,255,255,.6);
+  text-decoration:none;margin-bottom:10px;transition:color .2s;
+  cursor:pointer;
+}
+.footer-col a:hover,.footer-col span:hover{color:#fff}
+.footer-bottom{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{font-size:13px;color:rgba(255,255,255,.3)}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{font-size:13px;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+.footer-legal a:hover{color:rgba(255,255,255,.7)}
+
+/* ══════════════ STICKY BAR ══════════════ */
+.sticky-bar{
+  position:fixed;bottom:0;right:0;left:0;z-index:400;
+  background:rgba(10,15,30,.96);backdrop-filter:blur(16px);
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:12px 24px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+}
+.sticky-bar-text{font-size:14px;color:rgba(255,255,255,.6);margin-left:8px}
+.sticky-wa{
+  display:flex;align-items:center;gap:8px;
+  background:#25D366;color:#fff;text-decoration:none;
+  font-size:14px;font-weight:700;padding:10px 20px;border-radius:8px;
+  transition:opacity .2s;white-space:nowrap;
+}
+.sticky-wa:hover{opacity:.9}
+.sticky-tel{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.08);color:#fff;text-decoration:none;
+  font-size:14px;font-weight:500;padding:10px 20px;border-radius:8px;
+  transition:background .2s;white-space:nowrap;
+}
+.sticky-tel:hover{background:rgba(255,255,255,.14)}
+
+/* ══════════════ ACCESSIBILITY WIDGET ══════════════ */
+.a11y-btn{
+  position:fixed;bottom:76px;left:16px;z-index:450;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--blue-bright);color:#fff;border:none;cursor:pointer;
+  font-size:20px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(37,99,235,.4);transition:transform .2s;
+}
+.a11y-btn:hover{transform:scale(1.1)}
+.a11y-panel{
+  position:fixed;bottom:130px;left:16px;z-index:450;
+  background:var(--white);border:1px solid var(--border);
+  border-radius:var(--r-lg);padding:20px;
+  width:220px;box-shadow:var(--shadow-lg);
+  display:none;
+}
+.a11y-panel.open{display:block}
+.a11y-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:14px}
+.a11y-toggle{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:12px;cursor:pointer;
+}
+.a11y-toggle-label{font-size:14px;color:var(--text)}
+.a11y-switch{
+  width:36px;height:20px;border-radius:10px;
+  background:var(--border);position:relative;transition:background .2s;
+  flex-shrink:0;
+}
+.a11y-switch.on{background:var(--blue-bright)}
+.a11y-switch::after{
+  content:'';position:absolute;top:2px;right:2px;
+  width:16px;height:16px;border-radius:50%;background:#fff;
+  transition:transform .2s;
+}
+.a11y-switch.on::after{transform:translateX(-16px)}
+
+/* ══════════════ REVEAL ANIMATION ══════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ══════════════ ACCESSIBILITY MODES ══════════════ */
+body.large-text{font-size:18px}
+body.large-text .hero-title{font-size:clamp(44px,6vw,72px)}
+body.high-contrast{filter:contrast(1.4)}
+body.dyslexia-font,.dyslexia-font *{font-family:'Comic Sans MS','Chalkboard SE',cursive!important}
+body.reduce-motion *{animation:none!important;transition:none!important}
+
+/* ══════════════ MOBILE ══════════════ */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-links.open{
+    display:flex;flex-direction:column;
+    position:fixed;inset:70px 0 0 0;
+    background:rgba(10,15,30,.98);backdrop-filter:blur(16px);
+    padding:32px 24px;gap:8px;z-index:499;
+    align-items:flex-start;
+  }
+  .nav-links.open a{font-size:18px;padding:12px 16px;width:100%}
+  .hamburger{display:flex}
+
+  #hero{padding:100px 20px 80px}
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-card{display:none}
+  section{padding:70px 20px}
+  .services-grid,.reviews-grid,.ba-grid{grid-template-columns:1fr}
+  .booking-inner,.contact-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+  .sticky-bar-text{display:none}
+}
+
+@media(max-width:600px){
+  .hero-actions{flex-direction:column}
+  .hero-actions a{text-align:center;justify-content:center}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-legal{flex-wrap:wrap;gap:12px}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+
+/* Cookie banner */
+.cookie-banner{
+  position:fixed;bottom:76px;right:20px;left:20px;z-index:460;
+  background:var(--navy);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r);padding:16px 20px;
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  box-shadow:var(--shadow-lg);
+}
+.cookie-banner.hidden{display:none}
+.cookie-banner p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px}
+.cookie-banner p a{color:var(--cyan)}
+.cookie-accept{
+  background:var(--cyan);color:var(--navy);
+  border:none;border-radius:7px;padding:8px 18px;
+  font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer;
+  white-space:nowrap;transition:opacity .2s;
+}
+.cookie-accept:hover{opacity:.85}
+.cookie-reject{
+  background:transparent;color:rgba(255,255,255,.5);
+  border:none;font-family:'Heebo',sans-serif;font-size:13px;cursor:pointer;
+  white-space:nowrap;padding:8px 8px;transition:color .2s;
+}
+.cookie-reject:hover{color:#fff}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav id="main-nav" aria-label="ניווט ראשי">
+  <a href="#hero" class="nav-logo" aria-label="i.DENTX — עמוד הבית">
+    <div class="nav-logo-mark" aria-hidden="true">i<span>.</span></div>
+    <div>
+      <span class="nav-logo-text">i.DENTX</span>
+      <span class="nav-logo-sub">ד״ר פיראס עזאם</span>
+    </div>
+  </a>
+  <div class="nav-links" id="nav-links" role="navigation">
+    <a href="#services">שירותים</a>
+    <a href="#results">לפני ואחרי</a>
+    <a href="#reviews">המלצות</a>
+    <a href="#booking">קביעת תור</a>
+    <a href="#contact">צור קשר</a>
+    <a href="#booking" class="nav-cta">
+      <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+      קבע תור
+    </a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="תפריט" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero" role="banner">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+  </div>
+  <div class="hero-inner">
+    <div id="main-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        מרפאה פעילה · נוף הגליל
+      </div>
+      <h1 class="hero-title">
+        חיוך מושלם<br/>
+        <span>מתחיל כאן</span>
+      </h1>
+      <p class="hero-desc">
+        טיפולי שיניים מתקדמים עם גישה אישית וחמה לכל מטופל.<br/>
+        15+ שנות ניסיון. ייעוץ וצילום ראשון — ללא עלות.
+      </p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">
+          <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+          קבע תור אונליין
+        </a>
+        <a href="https://wa.me/972584104155?text=שלום, אשמח לקבל מידע ולקבוע תור" class="btn-primary btn-wa" target="_blank" rel="noopener" aria-label="שלח הודעה בווטסאפ">
+          <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+          WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats" aria-label="נתוני המרפאה">
+        <div class="hero-stat">
+          <div class="hero-stat-num">5,000+</div>
+          <div class="hero-stat-label">מטופלים מרוצים</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">15+</div>
+          <div class="hero-stat-label">שנות ניסיון</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">98%</div>
+          <div class="hero-stat-label">שיעור הצלחה</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">4.9★</div>
+          <div class="hero-stat-label">דירוג ממוצע</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating card -->
+    <div class="hero-card" aria-hidden="true">
+      <div class="hero-card-header">
+        <div class="hero-card-avatar" role="img" aria-label="ד״ר פיראס עזאם">🦷</div>
+        <div>
+          <div class="hero-card-name">ד״ר פיראס עזאם</div>
+          <div class="hero-card-title">מומחה לרפואת שיניים מתקדמת</div>
+        </div>
+        <div class="hero-card-badge">זמין</div>
+      </div>
+      <div class="hero-treatments">
+        <div class="hero-treatment">
+          <div class="hero-treatment-icon" style="background:rgba(37,99,235,.12)">💎</div>
+          <div>
+            <div class="hero-treatment-name">ציפויי E-MAX</div>
+            <div class="hero-treatment-meta">חרסינה פרימיום · ½–1 יום</div>
+          </div>
+        </div>
+        <div class="hero-treatment">
+          <div class="hero-treatment-icon" style="background:rgba(6,182,212,.12)">🔬</div>
+          <div>
+            <div class="hero-treatment-name">השתלות שיניים</div>
+            <div class="hero-treatment-meta">שיעור הצלחה 98% · אחריות לכל חיים</div>
+          </div>
+        </div>
+        <div class="hero-treatment">
+          <div class="hero-treatment-icon" style="background:rgba(201,168,76,.12)">😁</div>
+          <div>
+            <div class="hero-treatment-name">יישור שקוף</div>
+            <div class="hero-treatment-meta">אינויזליין מוסמך</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card-cta">
+        <a href="#booking">
+          <i class="ti ti-calendar-plus"></i>
+          קביעת תור אונליין — חינם
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" aria-hidden="true">שירותים</div>
+      <h2 class="section-title">מגוון טיפולים<br/>מתקדמים</h2>
+      <p class="section-desc">ממגוון רחב של טיפולי שיניים אסתטיים ורפואיים בטכנולוגיה עדכנית</p>
+    </div>
+    <div class="services-grid" role="list">
+
+      <article class="service-card sc-blue reveal" role="listitem">
+        <div class="service-icon si-blue" aria-hidden="true"><i class="ti ti-tooth"></i></div>
+        <h3>טיפולי שורש</h3>
+        <p>טיפול מקצועי ומדויק עם טכנולוגיה מתקדמת והרדמה מקומית מלאה — ללא כאב.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>הרדמה מקומית מלאה</li>
+          <li>ציוד דיגיטלי מתקדם</li>
+          <li>מעקב אחר הטיפול</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="service-card sc-cyan reveal" role="listitem">
+        <div class="service-icon si-cyan" aria-hidden="true"><i class="ti ti-sparkles"></i></div>
+        <h3>הלבנת שיניים</h3>
+        <p>הלבנה מקצועית עם תוצאות מיידיות. בטוח, יעיל וללא כאב — שינוי ניכר תוך שעה.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>תוצאות מיידיות</li>
+          <li>בטוח ויעיל לחלוטין</li>
+          <li>ללא כאב</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="service-card sc-gold reveal" role="listitem">
+        <div class="service-icon si-gold" aria-hidden="true"><i class="ti ti-align-center"></i></div>
+        <h3>יישור שיניים</h3>
+        <p>פתרונות יישור מותאמים אישית — גשרים שקופים ואינויזליין מוסמך עם מעקב צמוד.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>גשרים שקופים</li>
+          <li>אינויזליין מוסמך</li>
+          <li>מעקב אישי</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="service-card sc-gold reveal" role="listitem">
+        <div class="service-icon si-gold" aria-hidden="true"><i class="ti ti-diamond"></i></div>
+        <h3>ציפויי E-MAX</h3>
+        <p>ציפויים אסתטיים מחרסינה פרימיום עם התאמה מושלמת לצבע השן הטבעית.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>חרסינה פרימיום</li>
+          <li>התאמה מושלמת</li>
+          <li>עמידות לטווח ארוך</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="service-card sc-blue reveal" role="listitem">
+        <div class="service-icon si-blue" aria-hidden="true"><i class="ti ti-shield-check"></i></div>
+        <h3>מניעה וטיפול</h3>
+        <p>טיפולי מניעה מקצועיים לבריאות השיניים לטווח ארוך — ניקוי, ציפויים וייעוץ.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>ניקוי מקצועי</li>
+          <li>ציפויים מגנים</li>
+          <li>ייעוץ מונע</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="service-card sc-cyan reveal" role="listitem">
+        <div class="service-icon si-cyan" aria-hidden="true"><i class="ti ti-microscope"></i></div>
+        <h3>השתלות שיניים</h3>
+        <p>השתלות מתקדמות בטכנולוגיה חדישה עם שיעור הצלחה של 98% ואחריות לכל החיים.</p>
+        <ul class="service-features" aria-label="יתרונות הטיפול">
+          <li>טכנולוגיה מתקדמת</li>
+          <li>שיעור הצלחה 98%</li>
+          <li>אחריות לכל החיים</li>
+        </ul>
+        <a href="#booking" class="service-link">
+          קבע תור <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BEFORE / AFTER ══════════════ -->
+<section id="results">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" aria-hidden="true">תוצאות אמיתיות</div>
+      <h2 class="section-title">לפני ואחרי</h2>
+      <p class="section-desc">תוצאות ממטופלים שלנו — שקיפות מלאה</p>
+    </div>
+    <div class="ba-grid" role="list">
+      <article class="ba-card reveal" role="listitem">
+        <div class="ba-img-wrap">
+          <img src="ba-1.jpg" alt="שיקום פה מלא — שיניים תותבות על שתלים, לפני ואחרי טיפול אצל ד״ר פיראס עזאם" loading="lazy" width="400" height="300"/>
+          <span class="ba-tag" aria-hidden="true">לפני ואחרי</span>
+        </div>
+        <div class="ba-info">
+          <div class="ba-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+          <h3>שיקום פה מלא</h3>
+          <p>שיניים תותבות על שתלים — תוצאה טבעית מושלמת</p>
+        </div>
+      </article>
+      <article class="ba-card reveal" role="listitem">
+        <div class="ba-img-wrap">
+          <img src="ba-2.jpg" alt="ציפויי E-MAX — שיניים לבנות ומושלמות, לפני ואחרי טיפול אצל ד״ר פיראס עזאם" loading="lazy" width="400" height="300"/>
+          <span class="ba-tag" aria-hidden="true">לפני ואחרי</span>
+        </div>
+        <div class="ba-info">
+          <div class="ba-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+          <h3>ציפויי E-MAX</h3>
+          <p>שיניים לבנות ומושלמות — שינוי מוחלט בחיוך</p>
+        </div>
+      </article>
+      <article class="ba-card reveal" role="listitem">
+        <div class="ba-img-wrap">
+          <img src="ba-3.jpg" alt="4 השתלות שיניים מתקדמות — שיקום עליון מלא, לפני ואחרי טיפול אצל ד״ר פיראס עזאם" loading="lazy" width="400" height="300"/>
+          <span class="ba-tag" aria-hidden="true">לפני ואחרי</span>
+        </div>
+        <div class="ba-info">
+          <div class="ba-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+          <h3>השתלות שיניים מתקדמות</h3>
+          <p>4 השתלות + שיקום עליון — תוצאה תוך טיפול אחד</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REVIEWS ══════════════ -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" aria-hidden="true">המלצות</div>
+      <h2 class="section-title">מה אומרים<br/>המטופלים שלנו</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,.5)">חוות דעת אמיתיות ממטופלים מרוצים</p>
+    </div>
+    <div class="reviews-grid" role="list">
+      <article class="review-card reveal" role="listitem">
+        <div class="review-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+        <p class="review-text">שירות מעולה וטיפול מקצועי. ד״ר עזאם הסביר לי כל שלב בטיפול והייתי רגועה לאורך כל התהליך. ממליצה בחום!</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">ש</div>
+          <div>
+            <div class="review-name">שרה כהן</div>
+            <div class="review-treatment">טיפול שורש</div>
+          </div>
+        </div>
+      </article>
+      <article class="review-card reveal" role="listitem">
+        <div class="review-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+        <p class="review-text">עשיתי השתלת שיניים אצל ד״ר עזאם והתוצאה מדהימה. נראה כמו שיניים אמיתיות. המרפאה מקצועית ונקייה.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">י</div>
+          <div>
+            <div class="review-name">יוסף אברהם</div>
+            <div class="review-treatment">השתלת שיניים</div>
+          </div>
+        </div>
+      </article>
+      <article class="review-card reveal" role="listitem">
+        <div class="review-stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
+        <p class="review-text">הלבנת שיניים שעשיתי שינתה לי את החיים! השיניים הלבינו כמה גוונים תוך שעה אחת. ד״ר עזאם מדהים!</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">מ</div>
+          <div>
+            <div class="review-name">מיכל לוי</div>
+            <div class="review-treatment">הלבנת שיניים</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BOOKING ══════════════ -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-info reveal">
+        <div class="section-label" aria-hidden="true">קביעת תור</div>
+        <h2 class="section-title">קבעו תור<br/>אונליין</h2>
+        <p class="section-desc">פשוט, מהיר, וזמין 24/7 — בחרו שירות ומועד שמתאים לכם</p>
+
+        <div style="margin-top:36px">
+          <div class="booking-feature">
+            <div class="booking-feature-icon" aria-hidden="true"><i class="ti ti-clock-24"></i></div>
+            <div>
+              <h3>זמין 24/7</h3>
+              <p>קבעו תור בכל שעה — בלי להמתין לשעות הפעילות</p>
+            </div>
+          </div>
+          <div class="booking-feature">
+            <div class="booking-feature-icon" aria-hidden="true"><i class="ti ti-brand-whatsapp"></i></div>
+            <div>
+              <h3>אישור מיידי בוואטסאפ</h3>
+              <p>תקבלו אישור ותזכורת אוטומטית לפני הטיפול</p>
+            </div>
+          </div>
+          <div class="booking-feature">
+            <div class="booking-feature-icon" aria-hidden="true"><i class="ti ti-shield-lock"></i></div>
+            <div>
+              <h3>פרטיות מלאה</h3>
+              <p>המידע שלכם מאובטח ושמור על פי חוק הגנת הפרטיות</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Widget -->
+      <div class="booking-widget reveal" aria-label="טופס קביעת תור">
+        <div class="booking-widget-head" aria-hidden="true">
+          <div class="booking-widget-head-icon">📅</div>
+          <div>
+            <h3>קביעת תור אונליין</h3>
+            <p>מרפאת ד״ר פיראס עזאם · נוף הגליל</p>
+          </div>
+        </div>
+        <div class="calcom-fallback">
+          <!-- Cal.com יוטמע כאן לאחר הגדרה -->
+          <!-- <iframe src="https://cal.com/dr-firas/appointment" frameborder="0"></iframe> -->
+          <div class="booking-steps" role="list" aria-label="שלבי קביעת תור">
+            <div class="booking-step" role="listitem">
+              <div class="step-num" aria-hidden="true">1</div>
+              <div class="step-body">
+                <h4>בחרו שירות</h4>
+                <p>השתלות, ציפויים, יישור, הלבנה ועוד</p>
+              </div>
+            </div>
+            <div class="booking-step" role="listitem">
+              <div class="step-num" aria-hidden="true">2</div>
+              <div class="step-body">
+                <h4>תאריך ושעה</h4>
+                <p>בחרו מהיומן המעודכן של המרפאה</p>
+              </div>
+            </div>
+            <div class="booking-step" role="listitem">
+              <div class="step-num" aria-hidden="true">3</div>
+              <div class="step-body">
+                <h4>אישור בוואטסאפ</h4>
+                <p>תקבלו אישור מיידי + תזכורות לפני הטיפול</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/972584104155?text=שלום, אשמח לקבוע תור במרפאה" class="booking-cta-wa" target="_blank" rel="noopener" aria-label="קבע תור דרך וואטסאפ">
+            <i class="ti ti-brand-whatsapp" aria-hidden="true" style="font-size:20px"></i>
+            קביעת תור בוואטסאפ
+          </a>
+          <a href="tel:+972584104155" class="booking-cta-tel" aria-label="התקשר לקביעת תור">
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            058-410-4155 — שיחת טלפון
+          </a>
+          <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:8px">
+            א׳–ה׳ 8:00–18:00 · ו׳ 8:00–13:00
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact" style="background:var(--off-white)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-label" aria-hidden="true">צור קשר</div>
+        <h2 class="section-title">איך מגיעים<br/>אלינו?</h2>
+        <p class="section-desc" style="margin-bottom:36px">אנחנו כאן לכל שאלה ובקשה</p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true"><i class="ti ti-map-pin"></i></div>
+          <div>
+            <div class="contact-info-label">כתובת</div>
+            <div class="contact-info-val">דרך החטיבות 1, נוף הגליל</div>
+            <div class="contact-info-sub">
+              <a href="https://maps.google.com/?q=דרך+החטיבות+1+נוף+הגליל" target="_blank" rel="noopener" aria-label="פתח ב-Google Maps">Google Maps</a>
+              &nbsp;·&nbsp;
+              <a href="https://waze.com/ul?ll=32.7110,35.3038&navigate=yes" target="_blank" rel="noopener" aria-label="פתח ב-Waze">Waze</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true"><i class="ti ti-phone"></i></div>
+          <div>
+            <div class="contact-info-label">טלפון</div>
+            <div class="contact-info-val"><a href="tel:+972584104155">058-410-4155</a></div>
+            <div class="contact-info-sub">א׳–ה׳ 8:00–18:00 · ו׳ 8:00–13:00</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true"><i class="ti ti-mail"></i></div>
+          <div>
+            <div class="contact-info-label">דוא"ל</div>
+            <div class="contact-info-val"><a href="mailto:info@identx.co.il">info@identx.co.il</a></div>
+            <div class="contact-info-sub">מענה תוך 24 שעות</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true"><i class="ti ti-brand-whatsapp"></i></div>
+          <div>
+            <div class="contact-info-label">WhatsApp</div>
+            <div class="contact-info-val">
+              <a href="https://wa.me/972584104155" target="_blank" rel="noopener">שלח הודעה עכשיו</a>
+            </div>
+            <div class="contact-info-sub">מענה מהיר במשך שעות הפעילות</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="map-placeholder" role="region" aria-label="מפת מיקום המרפאה">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.5!2d35.3038!3d32.7110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQyJzM5LjYiTiAzNcKwMTgnMTMuNyJF!5e0!3m2!1siw!2sil!4v1700000000000"
+            width="100%" height="300" style="border:0;border-radius:var(--r-lg)" allowfullscreen
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="מפת מיקום מרפאת ד״ר פיראס עזאם — נוף הגליל">
+          </iframe>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px">
+          <a href="https://maps.google.com/?q=דרך+החטיבות+1+נוף+הגליל" target="_blank" rel="noopener"
+             class="btn-outline" style="flex:1;justify-content:center;color:var(--navy);border-color:var(--border);font-size:14px;padding:12px">
+            <i class="ti ti-map" aria-hidden="true"></i> Google Maps
+          </a>
+          <a href="https://waze.com/ul?ll=32.7110,35.3038&navigate=yes" target="_blank" rel="noopener"
+             class="btn-outline" style="flex:1;justify-content:center;color:var(--navy);border-color:var(--border);font-size:14px;padding:12px">
+            <i class="ti ti-car" aria-hidden="true"></i> Waze
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo" aria-label="i.DENTX עמוד הבית">
+        <div class="nav-logo-mark" aria-hidden="true">i<span style="color:var(--cyan)">.</span></div>
+        <div>
+          <span class="nav-logo-text">i.DENTX</span>
+          <span class="nav-logo-sub">מרפאת ד״ר פיראס עזאם</span>
+        </div>
+      </a>
+      <p>מרפאת שיניים מתקדמת עם הטכנולוגיה העדכנית ביותר בנוף הגליל. טיפול מקצועי עם גישה אישית לכל מטופל.</p>
+      <div class="footer-socials" aria-label="רשתות חברתיות">
+        <a href="#" class="footer-social" aria-label="פייסבוק" rel="noopener"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="footer-social" aria-label="אינסטגרם" rel="noopener"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/972584104155" class="footer-social" aria-label="וואטסאפ" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="ניווט מהיר">
+      <h4>ניווט מהיר</h4>
+      <a href="#hero">בית</a>
+      <a href="#services">שירותים</a>
+      <a href="#results">לפני ואחרי</a>
+      <a href="#reviews">המלצות</a>
+      <a href="#booking">קביעת תור</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
+    <nav class="footer-col" aria-label="שירותים">
+      <h4>שירותים</h4>
+      <a href="#services">טיפולי שורש</a>
+      <a href="#services">הלבנת שיניים</a>
+      <a href="#services">יישור שיניים</a>
+      <a href="#services">ציפויי E-MAX</a>
+      <a href="#services">השתלות שיניים</a>
+    </nav>
+    <div class="footer-col">
+      <h4>פרטי קשר</h4>
+      <span><i class="ti ti-map-pin" aria-hidden="true" style="font-size:14px"></i> דרך החטיבות 1, נוף הגליל</span>
+      <a href="tel:+972584104155"><i class="ti ti-phone" aria-hidden="true" style="font-size:14px"></i> 058-410-4155</a>
+      <a href="mailto:info@identx.co.il"><i class="ti ti-mail" aria-hidden="true" style="font-size:14px"></i> info@identx.co.il</a>
+      <span><i class="ti ti-clock" aria-hidden="true" style="font-size:14px"></i> א׳–ה׳ 8:00–18:00</span>
+      <span style="padding-right:22px">ו׳ 8:00–13:00</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 i.DENTX — מרפאת ד״ר פיראס עזאם. כל הזכויות שמורות.</p>
+    <nav class="footer-legal" aria-label="קישורים משפטיים">
+      <a href="legal.html" onclick="window.open('legal.html#terms')">תנאי שימוש</a>
+      <a href="legal.html" onclick="window.open('legal.html#privacy')">מדיניות פרטיות</a>
+      <a href="legal.html" onclick="window.open('legal.html#access')">נגישות</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ══════════════ STICKY BAR ══════════════ -->
+<div class="sticky-bar" role="complementary" aria-label="יצירת קשר מהיר">
+  <span class="sticky-bar-text">זמינים עכשיו ·</span>
+  <a href="https://wa.me/972584104155?text=שלום, אשמח לקבוע תור" class="sticky-wa" target="_blank" rel="noopener" aria-label="קבע תור דרך וואטסאפ">
+    <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+    קביעת תור בוואטסאפ
+  </a>
+  <a href="tel:+972584104155" class="sticky-tel" aria-label="התקשר למרפאה">
+    <i class="ti ti-phone" aria-hidden="true"></i>
+    058-410-4155
+  </a>
+</div>
+
+<!-- ══════════════ ACCESSIBILITY WIDGET ══════════════ -->
+<button class="a11y-btn" id="a11y-btn" aria-label="הגדרות נגישות" aria-expanded="false" aria-controls="a11y-panel">
+  <i class="ti ti-accessible" aria-hidden="true"></i>
+</button>
+<div class="a11y-panel" id="a11y-panel" role="dialog" aria-label="הגדרות נגישות">
+  <div class="a11y-title">⚙️ הגדרות נגישות</div>
+  <div class="a11y-toggle" onclick="toggleA11y('large-text','sw-large')" role="switch" aria-checked="false" tabindex="0" aria-label="טקסט גדול">
+    <span class="a11y-toggle-label">טקסט גדול</span>
+    <div class="a11y-switch" id="sw-large"></div>
+  </div>
+  <div class="a11y-toggle" onclick="toggleA11y('high-contrast','sw-contrast')" role="switch" aria-checked="false" tabindex="0" aria-label="ניגודיות גבוהה">
+    <span class="a11y-toggle-label">ניגודיות גבוהה</span>
+    <div class="a11y-switch" id="sw-contrast"></div>
+  </div>
+  <div class="a11y-toggle" onclick="toggleA11y('dyslexia-font','sw-dyslexia')" role="switch" aria-checked="false" tabindex="0" aria-label="פונט לדיסלקסיה">
+    <span class="a11y-toggle-label">פונט לדיסלקסיה</span>
+    <div class="a11y-switch" id="sw-dyslexia"></div>
+  </div>
+  <div class="a11y-toggle" onclick="toggleA11y('reduce-motion','sw-motion')" role="switch" aria-checked="false" tabindex="0" aria-label="הפחת אנימציות">
+    <span class="a11y-toggle-label">הפחת אנימציות</span>
+    <div class="a11y-switch" id="sw-motion"></div>
+  </div>
+</div>
+
+<!-- ══════════════ COOKIE BANNER ══════════════ -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="הסכמה לעוגיות" aria-live="polite">
+  <p>אנו משתמשים בעוגיות לשיפור חוויית הגלישה. <a href="legal.html" target="_blank">מדיניות פרטיות</a></p>
+  <button class="cookie-accept" onclick="acceptCookies()" aria-label="אני מסכים לשימוש בעוגיות">אני מסכים/ה</button>
+  <button class="cookie-reject" onclick="rejectCookies()" aria-label="דחה עוגיות">דחה</button>
+</div>
+
+<script>
+/* ── NAV SCROLL ── */
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+}, { passive: true });
+
+/* ── HAMBURGER ── */
+const ham = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+ham.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  ham.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    ham.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ── SCROLL REVEAL ── */
+const obs = new IntersectionObserver(
+  es => es.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }),
+  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+);
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 80 + 'ms';
+  obs.observe(el);
+});
+
+/* ── ACCESSIBILITY ── */
+const a11yBtn = document.getElementById('a11y-btn');
+const a11yPanel = document.getElementById('a11y-panel');
+a11yBtn.addEventListener('click', () => {
+  const open = a11yPanel.classList.toggle('open');
+  a11yBtn.setAttribute('aria-expanded', open);
+});
+document.addEventListener('click', e => {
+  if (!a11yPanel.contains(e.target) && e.target !== a11yBtn) {
+    a11yPanel.classList.remove('open');
+    a11yBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+function toggleA11y(cls, swId) {
+  const active = document.body.classList.toggle(cls);
+  const sw = document.getElementById(swId);
+  sw.classList.toggle('on', active);
+  sw.closest('[role="switch"]').setAttribute('aria-checked', active);
+  try { localStorage.setItem('a11y-'+cls, active); } catch(e){}
+}
+// Restore a11y prefs
+['large-text','high-contrast','dyslexia-font','reduce-motion'].forEach(cls => {
+  try {
+    if(localStorage.getItem('a11y-'+cls) === 'true') {
+      const swId = 'sw-' + cls.split('-')[cls.split('-').length - 1];
+      const swMap = {'large-text':'sw-large','high-contrast':'sw-contrast','dyslexia-font':'sw-dyslexia','reduce-motion':'sw-motion'};
+      toggleA11y(cls, swMap[cls]);
+    }
+  } catch(e){}
+});
+
+/* ── COOKIE BANNER ── */
+function acceptCookies() {
+  try { localStorage.setItem('cookies-accepted','1'); } catch(e){}
+  document.getElementById('cookie-banner').classList.add('hidden');
+}
+function rejectCookies() {
+  document.getElementById('cookie-banner').classList.add('hidden');
+}
+try {
+  if(localStorage.getItem('cookies-accepted')) document.getElementById('cookie-banner').classList.add('hidden');
+} catch(e){}
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const id = this.getAttribute('href');
+    if(id === '#') return;
+    const el = document.querySelector(id);
+    if(el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
